@@ -1,0 +1,242 @@
+body {
+    background-color: #333;
+}
+
+.map {
+    display: block;
+    margin: 0 auto;
+}
+
+.state-row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(12, 1fr);
+    right: 2vw;
+}
+
+.state-row:nth-child(2n) {
+    right: 5.5vw;
+}
+
+.state {
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    line-height: 7vw;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #e9e9e9;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+.state.active {
+    background: red;
+    color: white;
+}
+
+.state.out {
+    background-color: rgb(168, 168, 168);
+    color: rgb(95, 95, 95);
+    cursor: not-allowed;
+}
+
+.state.AK {
+    left: 2vw;
+    grid-column-start: 1;
+}
+.state.ME {
+    grid-column-start: 12;
+}
+.state.VT {
+    grid-column-start: 11;
+}
+.state.NH {
+    grid-column-start: 12;
+}
+.state.WA {
+    grid-column-start: 2;
+}
+.state.MT {
+    grid-column-start: 3;
+}
+.state.ND {
+    grid-column-start: 4;
+}
+.state.MN {
+    grid-column-start: 5;
+}
+.state.WI {
+    grid-column-start: 6;
+}
+.state.MI {
+    grid-column-start: 8;
+}
+.state.NY {
+    grid-column-start: 10;
+}
+.state.MA {
+    grid-column-start: 11;
+}
+.state.RI {
+    grid-column-start: 12;
+}
+.state.ID {
+    grid-column-start: 3;
+}
+.state.WY {
+    grid-column-start: 4;
+}
+.state.SD {
+    grid-column-start: 5;
+}
+.state.IA {
+    grid-column-start: 6;
+}
+.state.IL {
+    grid-column-start: 7;
+}
+.state.IN {
+    grid-column-start: 8;
+}
+.state.OH {
+    grid-column-start: 9;
+}
+.state.PA {
+    grid-column-start: 10;
+}
+.state.NJ {
+    grid-column-start: 11;
+}
+.state.CT {
+    grid-column-start: 12;
+}
+.state.OR {
+    grid-column-start: 2;
+}
+.state.NV {
+    grid-column-start: 3;
+}
+.state.CO {
+    grid-column-start: 4;
+}
+.state.NE {
+    grid-column-start: 5;
+}
+.state.MO {
+    grid-column-start: 6;
+}
+.state.KY {
+    grid-column-start: 7;
+}
+.state.WV {
+    grid-column-start: 8;
+}
+.state.MD {
+    grid-column-start: 9;
+}
+.state.DE {
+    grid-column-start: 10;
+}
+.state.CA {
+    grid-column-start: 3;
+}
+.state.AZ {
+    grid-column-start: 4;
+}
+.state.UT {
+    grid-column-start: 5;
+}
+.state.KS {
+    grid-column-start: 6;
+}
+.state.AR {
+    grid-column-start: 7;
+}
+.state.TN {
+    grid-column-start: 8;
+}
+.state.VA {
+    grid-column-start: 9;
+}
+.state.NC {
+    grid-column-start: 10;
+}
+.state.DC {
+    grid-column-start: 12;
+    left: 4vw;
+}
+.state.NM {
+    grid-column-start: 4;
+}
+.state.OK {
+    grid-column-start: 5;
+}
+.state.LA {
+    grid-column-start: 6;
+}
+.state.MS {
+    grid-column-start: 7;
+}
+.state.AL {
+    grid-column-start: 8;
+}
+.state.SC {
+    grid-column-start: 9;
+}
+.state.TX {
+    grid-column-start: 5;
+}
+.state.GA {
+    grid-column-start: 9;
+}
+.state.HI {
+    left: 2vw;
+    grid-column-start: 1;
+}
+.state.FL {
+    grid-column-start: 9;
+}
+
+.slide-up {
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    transition: bottom;
+    transition-duration: 0.25s;
+    padding: 20vh 2rem;
+    background: black;
+    left: 0;
+    right: 0;
+}
+
+.slide-up.active {
+    bottom: 0;
+}
+
+.slide-up-title {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.slide-up-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.slide-up p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}

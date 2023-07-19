@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="map">
+            <div class="state-row">
+                <div class="state AK">AK</div>
+                <div class="state ME">ME</div>
+            </div>
+            <div class="state-row">
+                <div class="state VT">VT</div>
+                <div class="state NH">NH</div>
+            </div>
+            <div class="state-row">
+                <div class="state WA">WA</div>
+                <div class="state MT">MT</div>
+                <div class="state ND">ND</div>
+                <div class="state MN">MN</div>
+                <div class="state WI">WI</div>
+                <div class="state MI">MI</div>
+                <div class="state NY">NY</div>
+                <div class="state MA">MA</div>
+                <div class="state RI">RI</div>
+            </div>
+            <div class="state-row">
+                <div class="state ID">ID</div>
+                <div class="state WY">WY</div>
+                <div class="state SD">SD</div>
+                <div class="state IA out">IA</div>
+                <div class="state IL">IL</div>
+                <div class="state IN">IN</div>
+                <div class="state OH">OH</div>
+                <div class="state PA">PA</div>
+                <div class="state NJ">NJ</div>
+                <div class="state CT">CT</div>
+            </div>
+            <div class="state-row">
+                <div class="state OR">OR</div>
+                <div class="state NV">NV</div>
+                <div class="state CO">CO</div>
+                <div class="state NE">NE</div>
+                <div class="state MO">MO</div>
+                <div class="state KY">KY</div>
+                <div class="state WV">WV</div>
+                <div class="state MD">MD</div>
+                <div class="state DE">DE</div>
+            </div>
+            <div class="state-row">
+                <div class="state CA">CA</div>
+                <div class="state AZ">AZ</div>
+                <div class="state UT">UT</div>
+                <div class="state KS">KS</div>
+                <div class="state AR">AR</div>
+                <div class="state TN">TN</div>
+                <div class="state VA">VA</div>
+                <div class="state NC">NC</div>
+                <div class="state DC">DC</div>
+            </div>
+            <div class="state-row">
+                <div class="state NM">NM</div>
+                <div class="state OK">OK</div>
+                <div class="state LA">LA</div>
+                <div class="state MS">MS</div>
+                <div class="state AL out">AL</div>
+                <div class="state SC">SC</div>
+            </div>
+            <div class="state-row">
+                <div class="state TX">TX</div>
+                <div class="state GA">GA</div>
+            </div>
+            <div class="state-row">
+                <div class="state HI">HI</div>
+                <div class="state FL">FL</div>
+            </div>            
+        </div>
+        <div class="slide-up">
+            <div class="slide-up-content">
+                <div class="slide-up-header">
+                    <div class="slide-up-title">State</div>
+                    <div class="slide-up-close">✕</div>
+                </div>
+                <div class="slide-up-body">
+                    <div class="slide-up-body-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur perferendis eius quos a nam nihil et temporibus provident aliquam repellendus. Expedita consequuntur cumque nemo ipsam asperiores mollitia id et rem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".state").click(function(){
+                    $(this).addClass('active');
+                    $(".slide-up").addClass("active");
+                    $('.slide-up-title').html($(this).html());
+                });
+                $(".slide-up-close").click(function(){
+                    $('.state').removeClass('active');
+                    $(".slide-up").removeClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>
